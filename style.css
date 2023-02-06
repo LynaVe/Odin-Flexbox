@@ -1,8 +1,7 @@
 body{
     margin: 0;  
-    height: 100vh;
+    min-height: 100vh;
     padding: 0;
-    flex: 1;
 }
 
 .body{
@@ -13,9 +12,9 @@ body{
 
 .header{
     display: flex;
-    justify-content: space-between;
     flex: 1;
     align-items: center;
+    justify-content: space-between;
     padding:30px;
     padding: 0px;
 }
@@ -25,7 +24,6 @@ ul ,a {
     list-style-type: none;
     display: flex;
     gap: 20px;
-    justify-content: space-between;
     color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 18px;
@@ -42,6 +40,8 @@ ul ,a {
 }
 
 .image_placeholder{
+    display: flex;
+    flex-wrap: wrap;
     background: url('loading.gif') no-repeat;
     width:500px;
     height:300px;
@@ -50,7 +50,6 @@ ul ,a {
 .second-container{
     display: flex;
     padding: 39px 20px;
-    justify-content: space-between;
     gap:100px;
     color: white;
   }
@@ -82,7 +81,8 @@ ul ,a {
     flex-direction: column;
     flex: 1;
     text-align: center;
-    padding: 40px;
+    padding: 100px;
+
 
 }
 .image-pic{
@@ -97,7 +97,6 @@ ul ,a {
 .image-flexbox{
     display: flex;
     gap:90px;
-    padding: 30px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -106,10 +105,108 @@ ul ,a {
 
 .text-image{
     width:200px;
-    height:200px;
 }
 
 .main-container2 > h1{
   font-weight: 900;
   font-size: 32px;
+  padding: 10px;
+}
+
+.main-container3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e7eb;
+  padding: 50px;
+}
+
+.third-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1000px;
+  justify-content: center;
+}
+
+.quote-text{
+  display: flex;
+  font-size: 36px;
+  font-style: italic;
+
+}
+
+.author-text{
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.third-container1{
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  justify-content: flex-end;
+}
+
+.main-container4{
+  display: flex;
+  align-items: center;
+  padding:50px;
+  justify-content: center;
+ 
+}
+
+.fourth-column{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.fourth-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000px;
+  background-color: #3882f6;
+  padding: 30px;
+  border-radius: 8px;
+  margin: 100px;
+}
+
+.fourth-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.fourth-button > button {
+   padding:10px 30px;
+   border: white;
+   background-color: #3882f6;
+   color: white;
+   font-weight: 800;
+   border: 2px solid white;
+}
+
+.bold-text{
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.normal-text{
+  color: white;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  background-color: #1f2937;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
 }
