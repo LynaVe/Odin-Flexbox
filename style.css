@@ -1,9 +1,14 @@
 body{
     margin: 0;  
-    height: inherit;
-    display: flex;
+    height: 100vh;
     padding: 0;
- 
+    flex: 1;
+}
+
+.body{
+      background-color: #1f2937;
+      padding: 20px;
+      flex-shrink: 0;
 }
 
 .header{
@@ -12,6 +17,7 @@ body{
     flex: 1;
     align-items: center;
     padding:30px;
+    padding: 0px;
 }
 
 ul ,a {
@@ -20,7 +26,7 @@ ul ,a {
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 700;
     font-size: 18px;
 }
@@ -31,6 +37,7 @@ ul ,a {
     margin: 200px;
     margin-top: 10px;
     flex-direction: column;
+    background-color: #1f2937;
     
 }
 
@@ -40,23 +47,69 @@ ul ,a {
     height:300px;
   }
 
-  .second-container{
+.second-container{
     display: flex;
-    padding: 39px;
+    padding: 39px 20px;
     justify-content: space-between;
     gap:100px;
+    color: white;
   }
 
-  .awesome-container{
+.awesome-container{
     height:300px;
+    width:750px;
   }
-  .img-container{
+
+.img-container{
     display: flex;
     
   }
 
-  .awesome-container > button{
+.awesome-container > button{
     padding:10px 30px;
+    background-color: #3882f6;
+    font-weight: 800;
+    color:white;
     margin-top: 20px;
   }
+  .awesome-container > h1{
+    font-size: 45px;
+  }
 
+
+.main-container2{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    padding: 40px;
+
+}
+.image-pic{
+    background: url('loading.gif') no-repeat;
+    width:200px;
+    height:200px;
+    border: 2px solid blue;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.image-flexbox{
+    display: flex;
+    gap:90px;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.text-image{
+    width:200px;
+    height:200px;
+}
+
+.main-container2 > h1{
+  font-weight: 900;
+  font-size: 32px;
+}
